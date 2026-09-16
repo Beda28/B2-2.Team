@@ -5,3 +5,5 @@
 ```bash
 # 본인 이름 @깃헙 아이디 넣고 push
 방승규 @Beda28
+노신용 @ShinyongNoh
+```
