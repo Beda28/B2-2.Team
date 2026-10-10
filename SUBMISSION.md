@@ -54,7 +54,7 @@ PR #11·#12에는 구체적인 피드백이 있으나 작성자의 답변은 확
 | --- | --- |
 | git commit --amend | [Issue #17](https://github.com/Beda28/B2-2.Team/issues/17), [PR #18](https://github.com/Beda28/B2-2.Team/pull/18): 94d54b8 → 4f7346f |
 | git reset --soft HEAD~1 | 실습 증빙 미확인 |
-| git revert | 실습 증빙 미확인 |
+| git revert | 방승규: [추가 0712894](https://github.com/Beda28/B2-2.Team/commit/07128946f5431684333de54de746d974f38558b3) → [취소 1404e0d](https://github.com/Beda28/B2-2.Team/commit/1404e0d1a80c3f28a7f0f90a9d0a4d48abe30bf0), 파일·전체 트리 복구 및 두 커밋 push 확인 |
 | git stash / git stash pop | 실습 증빙 미확인 |
 
 ## 7. Git 히스토리 증빙
@@ -63,6 +63,7 @@ PR #11·#12에는 구체적인 피드백이 있으나 작성자의 답변은 확
 - [충돌 실습 1 병합: 6e76748](https://github.com/Beda28/B2-2.Team/commit/6e76748)
 - [충돌 실습 2 병합: 1afaf55](https://github.com/Beda28/B2-2.Team/commit/1afaf55)
 - [amend 실습 병합: 856c92e](https://github.com/Beda28/B2-2.Team/commit/856c92e)
+- [revert 실습 브랜치 이력](https://github.com/Beda28/B2-2.Team/commits/feature/bsg-revert-demo/)
 
 ## 8. 최종 검증 및 문서 PR
 
