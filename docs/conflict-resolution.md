@@ -25,7 +25,7 @@
 - 관련 PR: [#14 선행 변경](https://github.com/Beda28/B2-2.Team/pull/14), [#13 충돌 해결 및 병합](https://github.com/Beda28/B2-2.Team/pull/13)
 - 해결 커밋: [736d049](https://github.com/Beda28/B2-2.Team/commit/736d0498f6c5383e9cb657f2583ed61d11754c59)
 - main 병합 커밋: [6e76748](https://github.com/Beda28/B2-2.Team/commit/6e76748)
-- 문서 작성 시 Python 3.14.6에서 python -m unittest discover -s tests -v를 실행한 결과, 5개 중 4개 통과·1개 실패했습니다. add(3, 2)의 실제 값 5와 남겨진 기대값 4가 달랐습니다.
+- 충돌 실습 직후에는 기대값 4가 실제 값 5와 달라 테스트 1개가 실패했습니다. 이후 [cfefdc3](https://github.com/Beda28/B2-2.Team/commit/cfefdc3c311a97bf473fa8ea81db6f983198fece)에서 기대값을 5로 수정했고, 수학 테스트 5개가 모두 통과했습니다.
 - 충돌 마커 제거와 병합 성공만으로 기능이 올바르다고 판단할 수 없습니다. 기대값의 의미를 검토하고 테스트를 실행해야 합니다.
 
 ## 2. 문자열 공백 정리 방식 충돌
@@ -53,5 +53,5 @@
 - 관련 PR: [#15 선행 변경](https://github.com/Beda28/B2-2.Team/pull/15), [#16 충돌 해결 및 병합](https://github.com/Beda28/B2-2.Team/pull/16)
 - 해결 커밋: [13b4c3c](https://github.com/Beda28/B2-2.Team/commit/13b4c3cdfc6413f71b48c013fd24b35a4ff7bcc6)
 - main 병합 커밋: [1afaf55](https://github.com/Beda28/B2-2.Team/commit/1afaf55)
-- 문서 작성 시 python -m src.string_utils 실행은 ModuleNotFoundError로 실패했습니다. 충돌 실습 중 추가된 from matplotlib import text가 남아 있으며, 검증 환경에는 matplotlib이 설치되어 있지 않습니다.
+- 충돌 실습 직후에는 불필요한 matplotlib import 때문에 모듈 실행이 실패했습니다. 이후 [cfefdc3](https://github.com/Beda28/B2-2.Team/commit/cfefdc3c311a97bf473fa8ea81db6f983198fece)에서 import를 제거했고, 모듈 실행과 문자열 입력 6종 검증이 통과했습니다.
 - split()은 연속 공백·탭·개행을 구분자로 처리하지만 split(" ")은 단일 공백만 구분자로 사용하므로 결과가 다릅니다. 충돌한 줄뿐 아니라 함께 유입된 import도 검토해야 합니다.

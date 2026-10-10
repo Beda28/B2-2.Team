@@ -18,7 +18,7 @@ GitHub Flow를 사용해 작업별 브랜치에서 개발하고, PR 리뷰 후 m
 | 노신용 | [src/case_conversion_utils.py](src/case_conversion_utils.py) | to_uppercase, to_lowercase | to_uppercase("Hello") → "HELLO", to_lowercase("Hello") → "hello" |
 | 김세윤 | [src/math_utils.py](src/math_utils.py) | add, subtract, multiply, divide | add(3, 2) → 5, subtract(3, 2) → 1, multiply(3, 2) → 6, divide(3, 2) → 1.5 |
 
-문자열 유틸의 반환값은 함수의 동작 예시입니다. 현재 src/string_utils.py는 불필요한 matplotlib import로 인해 표준 라이브러리만 설치한 환경에서 실행되지 않습니다. divide의 두 번째 인자가 0이면 ValueError가 발생합니다.
+외부 라이브러리 없이 실행합니다. divide의 두 번째 인자가 0이면 ValueError가 발생합니다.
 
 # 4. 실행 및 검증
 
@@ -27,7 +27,7 @@ Python 3.10 이상에서 프로젝트 루트를 기준으로 실행합니다.
 - 문자열 실행 예시: python -m src.string_utils
 - 수학 테스트: python -m unittest discover -s tests -v
 
-문서 작성 시 Python 3.14.6으로 검증한 결과, 문자열 모듈은 matplotlib import에서 실패했고 수학 테스트는 5개 중 4개 통과·1개 실패했습니다. 충돌 실습 후 남은 문제는 [충돌 해결 기록](docs/conflict-resolution.md)에 정리했습니다.
+Python 3.14.6에서 수학 테스트 5개, 문자열 입력 6종 검증과 모듈 실행 예시가 모두 통과했습니다.
 
 # 5. 주요 문서
 
