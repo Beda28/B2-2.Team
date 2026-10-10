@@ -1,6 +1,9 @@
+from matplotlib import text
+
+
 def normalize_spaces(text: str) -> str:
     """양 끝 공백을 제거하고 연속된 공백 문자를 단일 공백으로 바꾼다."""
-    return " ".join(text.split(" "))
+    return " ".join(text.strip().split())
 
 
 def count_words(text: str) -> int:
