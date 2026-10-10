@@ -1,0 +1,66 @@
+Command: git log --oneline --graph --all (trailing spaces trimmed)
+Captured: 2026-10-10; HEAD: cfefdc3; branch: feature/bsg-final-docs
+
+* cfefdc3 fix: restore correctness after conflict exercises
+* c219749 docs: record verified revert practice and evidence
+* a17130b docs: assign revert practice participant
+* 4077fd5 docs: document collaboration evidence and conflict exercises
+| * 1404e0d Revert "docs: add temporary line for revert practice"
+| * 0712894 docs: add temporary line for revert practice
+|/
+*   856c92e Merge pull request #18 from Beda28/feature/seyun-amend-demo
+|\
+| * ed552b2 docs: record amend troubleshooting
+| * 4f7346f docs: add Git amend practice example
+|/
+*   1afaf55 Merge pull request #16 from Beda28/feature/conflict-demo2
+|\
+| *   13b4c3c Merge branch 'main' into feature/conflict-demo2
+| |\
+| |/
+|/|
+* |   d4d2d88 Merge pull request #15 from Beda28/feature/bsg-test-txt
+|\ \
+| * | ba3409c fix: return
+| * | e400548 docs: add simple test text
+|/ /
+| * ffc796b test: modify conflict demo
+|/
+*   6e76748 Merge pull request #13 from Beda28/feature/conflict-demo
+|\
+| *   736d049 Merge branch 'main' into feature/conflict-demo
+| |\
+| |/
+|/|
+* |   91be998 Merge pull request #14 from Beda28/feature/bsg-conflict-test
+|\ \
+| * | 4a29471 fix: test_add fix
+| * | 2f21b3c docs: first commit for conflict test
+|/ /
+| * 3d29c62 test: modify conflict demo
+|/
+*   02183f7 Merge pull request #3 from Beda28/feature/bsg-string-utils
+|\
+| * a070dbb feat: add string utility functions
+* |   e663d15 Merge pull request #4 from Beda28/feature/bsg-contributing
+|\ \
+| * | 9fa044a docs: define collaboration guidelines
+| |/
+* |   5bf39ad Merge pull request #11 from Beda28/feature/nsy-whitespace-normalization
+|\ \
+| * | 0a08abb feat: add whitespace normalization utility
+| |/
+* |   eb2b239 Merge pull request #12 from Beda28/feature/nsy-case-conversion
+|\ \
+| * | d89739b feat: add string case conversion utilities
+| |/
+* |   acdcef2 Merge pull request #10 from Beda28/feature/seyun-math-tests
+|\ \
+| |/
+|/|
+| * 4ff1552 test: add arithmetic utility tests
+| * 184e7cb feat: add basic arithmetic utility functions
+|/
+* ac7dd94 docs: 기본문서 추가
+* 7921cc7 docs: 노신용 이름 추가
+* 25f1ac8 feat: 소개합니다!
