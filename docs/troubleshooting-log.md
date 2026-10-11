@@ -18,12 +18,26 @@
 
 ## 2. git reset --soft HEAD~1
 
-- 증빙 확인 상태: 저장소·PR·제공된 스크린샷에서 실습 기록을 확인하지 못했습니다.
-- 참여자:
-- 발생 상황:
+- 참여자: 노신용(@ShinyongNoh)
+- 상황: `docs/nsy-reset-soft` 브랜치에서 `reset-test.txt`를 생성하고 두 번의 테스트 커밋을 만든 뒤, 가장 최근 커밋을 취소하면서 변경 내용을 유지하는 `git reset --soft HEAD~1`의 동작을 확인했습니다.
 - 사용 명령어:
-- 결과:
-- 선택 이유 및 주의점:
+  1. `echo "첫 번째 내용" > reset-test.txt`
+  2. `git add reset-test.txt`
+  3. `git commit -m "test: add reset practice file"`
+  4. `echo "두 번째 내용" >> reset-test.txt`
+  5. `git add reset-test.txt`
+  6. `git commit -m "test: update reset practice file"`
+  7. `git log --oneline -n 4`
+  8. `git status`
+  9. `cat reset-test.txt`
+  10. `git reset --soft HEAD~1`
+  11. `git log --oneline -n 4`
+  12. `git status`
+  13. `git diff --cached`
+  14. `cat reset-test.txt`
+- 결과: 실행 전 최근 커밋은 `cfe6bb2`(`test: update reset practice file`)이었고, 그 이전 커밋은 `256f771`(`test: add reset practice file`)이었습니다. `git reset --soft HEAD~1` 실행 후 최근 커밋은 `256f771`로 변경되었으며, `reset-test.txt`에 추가한 `두 번째 내용`은 파일에 유지되고 스테이징 상태로 남았습니다. 실습 후에는 `git reset --hard origin/main`으로 브랜치를 기준 상태로 되돌려 테스트 커밋과 추적 중인 테스트 파일을 정리했습니다.
+- 선택 이유 및 주의점: 가장 최근 커밋을 취소하되 변경 내용은 다시 커밋할 수 있도록 스테이징 상태로 유지하기 위해 사용했습니다. `--soft`는 커밋 이력만 이동시키며 작업 디렉터리와 스테이징 영역의 변경은 유지합니다. 반면 `--mixed`는 스테이징을 해제하고, `--hard`는 추적 중인 파일의 변경까지 되돌리므로 실행 전에 브랜치와 작업 상태를 반드시 확인해야 합니다.
+- 증빙: [Issue #25](https://github.com/Beda28/B2-2.Team/issues/25), PR: 작성 후 추가
 
 ## 3. git revert
 
