@@ -3,7 +3,7 @@
 ## 1. 팀 정보 및 저장소
 
 - 과정: Codyssey AI/SW 기초 2-2 팀 프로젝트
-- 팀원: 방승규(@Beda28), 노신용(@ShinyongNoh), 김세윤(@sy364)
+- 팀원: 방승규(@Beda28), 노신용(@ShinyongNoh), 김세윤(@sy364), 김준원(@jwyssey)
 - 저장소: [Beda28/B2-2.Team](https://github.com/Beda28/B2-2.Team)
 
 ## 2. 팀원별 Issue / PR
@@ -17,8 +17,10 @@
 | 김세윤 | 사칙연산 유틸 | [#5](https://github.com/Beda28/B2-2.Team/issues/5) | [#9](https://github.com/Beda28/B2-2.Team/pull/9) |
 | 김세윤 | 수학 테스트 | [#6](https://github.com/Beda28/B2-2.Team/issues/6) | [#10](https://github.com/Beda28/B2-2.Team/pull/10) |
 | 김세윤 | amend 실습 | [#17](https://github.com/Beda28/B2-2.Team/issues/17) | [#18](https://github.com/Beda28/B2-2.Team/pull/18) |
+| 김준원 | 리스트 유틸 | [#21](https://github.com/Beda28/B2-2.Team/issues/21) | [#22](https://github.com/Beda28/B2-2.Team/pull/22) |
+| 김준원 | stash 실습 | [#20](https://github.com/Beda28/B2-2.Team/issues/20) | [#23](https://github.com/Beda28/B2-2.Team/pull/23) |
 
-2026-10-10 GitHub 조회 기준으로 위 PR 7건의 병합을 확인했습니다.
+2026-10-10 GitHub 조회 기준으로 김준원 PR 2건을 제외한 위 PR 7건의 병합을 확인했습니다. 김준원 PR 2건은 2026-10-11 생성 후 리뷰 대기 중입니다.
 
 ## 3. 주요 문서
 
@@ -34,6 +36,7 @@
 | 방승규 | [PR #10 승인](https://github.com/Beda28/B2-2.Team/pull/10#pullrequestreview-5478384999) | [PR #11 승인](https://github.com/Beda28/B2-2.Team/pull/11#pullrequestreview-5478387875) | 승인 본문에 구체적인 피드백 없음 |
 | 노신용 | [PR #3 댓글](https://github.com/Beda28/B2-2.Team/pull/3#issuecomment-6095664362) | [PR #4 댓글](https://github.com/Beda28/B2-2.Team/pull/4#issuecomment-6095669776) | 칭찬 댓글로, 실질적인 코드 리뷰 증빙은 아님 |
 | 김세윤 | [PR #11 공백·탭·개행 피드백](https://github.com/Beda28/B2-2.Team/pull/11#pullrequestreview-5478390555) | [PR #12 혼합 문자열 테스트 피드백](https://github.com/Beda28/B2-2.Team/pull/12#pullrequestreview-5478388666) | 구체적인 피드백 2건, 작성자 답변 미확인 |
+| 김준원 | 진행 전 | 진행 전 | 타인 PR 리뷰 2건, 본인 PR 리뷰 반영 1회 증빙 예정 |
 
 모든 팀원의 실질적인 리뷰 2건 및 작성자와의 상호작용 충족 여부는 추가 확인이 필요합니다.
 
@@ -57,7 +60,7 @@
 | git commit --amend | [Issue #17](https://github.com/Beda28/B2-2.Team/issues/17), [PR #18](https://github.com/Beda28/B2-2.Team/pull/18): 94d54b8 → 4f7346f |
 | git reset --soft HEAD~1 | 실습 증빙 미확인 |
 | git revert | 방승규: [추가 0712894](https://github.com/Beda28/B2-2.Team/commit/07128946f5431684333de54de746d974f38558b3) → [취소 1404e0d](https://github.com/Beda28/B2-2.Team/commit/1404e0d1a80c3f28a7f0f90a9d0a4d48abe30bf0), 파일 복구 및 두 커밋 push 확인 |
-| git stash / git stash pop | 실습 증빙 미확인 |
+| git stash / git stash pop | 김준원: [Issue #20](https://github.com/Beda28/B2-2.Team/issues/20), [PR #23](https://github.com/Beda28/B2-2.Team/pull/23), [실습 기록](docs/troubleshooting-log.md#4-git-stash--git-stash-pop): stash d7f4ccb 보관 → pop 복원, stash 목록 비움 확인 |
 
 ## 7. Git 히스토리 증빙
 
